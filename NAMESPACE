@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("grDevices", "getGraphicsEvent")
+importFrom("graphics", "grid", "plot")
+importFrom("stats", "approx", "ts")
+S3method(plot,SOP)
+S3method(SOP,base)
+S3method(SOP,default)
