@@ -39,8 +39,10 @@ function(type              ="agricultural",
       {
          stop("Coverage area is not specified !")
       }
-      if(sum(annualVariation)!=100)
+      if(all.equal(sum(annualVariation),100))
       {
+         cat("Sum of annual variation is OK !")
+      }else{
          stop("Sum of annual variation must be equal to 100 percent !")
       }
       if(cycle)
@@ -66,9 +68,11 @@ function(type              ="agricultural",
       {
          stop("Annual variation is not specified !")
       }
-      if(sum(annualVariation)!=100)
+      if(all.equal(sum(annualVariation),100))
       {
-         stop("Sum of annual variation must be equal to 100 percent !")
+         cat("Sum of annual variation is OK !")
+      }else{
+         cat("Sum of annual variation must be equal to 100 percent !")
       }
       if(cycle)
       {
@@ -93,9 +97,11 @@ function(type              ="agricultural",
       {
          stop("Annual variation is not specified !")
       }
-      if(sum(annualVariation)!=100)
+      if(all.equal(sum(annualVariation),100))
       {
-         stop("Sum of annual variation must be equal to 100 percent !")
+         cat("Sum of annual variation is OK !")
+      }else{
+         cat("Sum of annual variation must be equal to 100 percent !")
       }
       if(cycle)
       {
@@ -121,9 +127,11 @@ function(type              ="agricultural",
       {
          stop("Annual variation is not specified !")
       }
-      if(sum(annualVariation)!=100)
+      if(all.equal(sum(annualVariation),100))
       {
-         stop("Sum of annual variation must be equal to 100 percent !")
+         cat("Sum of annual variation is OK !")
+      }else{
+         cat("Sum of annual variation must be equal to 100 percent !")
       }
       if(cycle)
       {
